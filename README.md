@@ -59,6 +59,53 @@ Start the server
 * [Bootstrap](https://getbootstrap.com/)
 * [Fake Store API](https://fakestoreapi.com/)
 
+
+## Folder Structure
+```
+React_E-Commerce-master/
+|── |node_modules
+|── |public/
+│   |      ├── assets/
+│   │      |     ├── images
+│   |      ├── index.html
+│   |
+│   ├── src/
+│   |       ├──components/
+|   |       |             ├──Footer.jsx
+|   |       |             ├──index.js
+|   |       |             ├──main.jsx
+|   |       |            ├──Navbar.jsx
+|   |       |           ├──Products.jsx
+|   |       |
+|   |       ├── pages/
+│   |       |         ├── cart.jsx
+|   |       |         ├──Checkout.jsx
+|   |       |         ├──Home.js
+|   |       |         ├──index.jsx
+|   |       |         ├──Login.jsx
+|   |       |         ├──PageNotFound.js
+|   |       |         ├──Product.jsx
+|   |       |         ├──Products.jsx
+|   |       |         ├──Register.jsx
+|   |       |
+|   |       ├── redux/
+│   |       |          ├──action/
+|   |       |          |         ├── index.js
+|   |       |          |
+|   |       |          ├──reducer/
+|   |       |          |          ├── handleCart.js
+|   |       |          |          ├── index.js
+|   |       |          |
+│   |       |          ├──store.js
+|   |
+|   ├──index.js
+├── .gitignore
+├── package-lock.json
+├── package.json
+├── README.md
+
+
+
 ## Contributing
 
 Contributions are always welcome!

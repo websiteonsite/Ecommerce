@@ -40,7 +40,7 @@ const Cart = () => {
     });
 
     state.map((item) => {
-      return (gst += item.price * 0.18);
+      return (gst += subtotal * 0.18);
     });
 
     state.map((item) => {
