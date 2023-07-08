@@ -29,7 +29,7 @@ const Checkout = () => {
       return (subtotal += item.price * item.qty);
     });
     state.map((item) => {
-      return (gst += subtotal * 0.18);
+      return (gst = subtotal * 0.18);
     });
     state.map((item) => {
       return (totalItems += item.qty);

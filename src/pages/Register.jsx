@@ -8,15 +8,15 @@ import axios from "axios";
 
 const Register = () => {
 
-   
-        const navigate = useNavigate()    
-        const [userName, setUserName] = useState('')
-        const [password, setPassword] = useState('')
+        const navigate = useNavigate();
+        const [fullname, setFullname] = useState('');
+        const [userName, setUserName] = useState('');
+        const [password, setPassword] = useState('');
     
         const handleSignup = () => {
-            console.log(userName, password)
+            console.log(fullname, userName, password)
     
-            const data = { name: userName, password: password }
+            const data = { name: fullname, email: userName, password: password }
             axios.post('http://localhost:3000/register', data)
                 .then((res) => {
                     console.log(res.data, 17)
@@ -46,6 +46,9 @@ const Register = () => {
                                     class="form-control"
                                     id="Name"
                                     placeholder="Enter Your Name"
+                                    onChange={(e) => {
+                                        setFullname(e.target.value)
+                                    }}
                                 />
                             </div>
                             <div class="form my-3">
@@ -55,6 +58,9 @@ const Register = () => {
                                     class="form-control"
                                     id="Email"
                                     placeholder="name@example.com"
+                                    onChange={(e) => {
+                                        setUserName(e.target.value)
+                                    }}
                                 />
                             </div>
                             <div class="form  my-3">
@@ -64,6 +70,9 @@ const Register = () => {
                                     class="form-control"
                                     id="Password"
                                     placeholder="Password"
+                                    onChange={(e) => {
+                                        setPassword(e.target.value)
+                                    }}
                                 />
                             </div>
                             <div className="my-3">

@@ -8,11 +8,9 @@ import axios from "axios";
 
 const Login = () => {
 
-  const navigate = useNavigate()
-
-
-    const [userName, setUserName] = useState('')
-    const [password, setPassword] = useState('')
+    const navigate = useNavigate();
+    const [userName, setUserName] = useState('');
+    const [password, setPassword] = useState('');
 
     const handleLogin = () => {
         console.log(userName, password)
@@ -55,6 +53,9 @@ const Login = () => {
                   class="form-control"
                   id="floatingInput"
                   placeholder="name@example.com"
+                  onChange={(e) => {
+                    setUserName(e.target.value)
+                }}
                 />
               </div>
               <div class="my-3">
@@ -64,6 +65,9 @@ const Login = () => {
                   class="form-control"
                   id="floatingPassword"
                   placeholder="Password"
+                  onChange={(e) => {
+                    setPassword(e.target.value)
+                }}
                 />
               </div>
               <div className="my-3">

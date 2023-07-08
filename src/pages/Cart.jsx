@@ -35,12 +35,13 @@ const Cart = () => {
     let shipping = 30.0;
     let totalItems = 0;
     let gst = 0.18;
+
     state.map((item) => {
       return (subtotal += item.price * item.qty);
     });
 
     state.map((item) => {
-      return (gst += subtotal * 0.18);
+      return (gst = subtotal * 0.18);
     });
 
     state.map((item) => {
@@ -149,7 +150,7 @@ const Cart = () => {
                           <strong>Total amount</strong>
                         </div>
                         <span>
-                          <strong>${Math.round(subtotal + gst)}</strong>
+                          <strong>${Math.round(subtotal + shipping + gst)}</strong>
                         </span>
                       </li>
                     </ul>
