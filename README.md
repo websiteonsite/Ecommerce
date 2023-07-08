@@ -4,7 +4,7 @@ A Ecommerce Website made with React.js Framework.
 
 
 ## Demo
-Link - (https://golden-puppy-13ba09.netlify.app/cart)
+Link - (https://golden-puppy-13ba09.netlify.app)
 
 ## Features
 
