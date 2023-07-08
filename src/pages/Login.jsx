@@ -16,7 +16,7 @@ const Login = () => {
         console.log(userName, password)
 
         const data = { email: userName, password: password }
-        axios.post('http://reqres.in/api/login', {
+        axios.post('http://localhost:3000/login', {
             email : userName,
             password : password
         })
