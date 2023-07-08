@@ -16,10 +16,7 @@ const Login = () => {
         console.log(userName, password)
 
         const data = { email: userName, password: password }
-        axios.post('http://localhost:3000/login', {
-            email : userName,
-            password : password
-        })
+          axios.post('http://localhost:3001/login', data)
             .then((res) => {
                 console.log(res.data.token, 17);
                 if (res.data.token) {
