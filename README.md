@@ -74,8 +74,8 @@ React_E-Commerce-master/
 |   |       |             ├──Footer.jsx
 |   |       |             ├──index.js
 |   |       |             ├──main.jsx
-|   |       |            ├──Navbar.jsx
-|   |       |           ├──Products.jsx
+|   |       |             ├──Navbar.jsx
+|   |       |             ├──Products.jsx
 |   |       |
 |   |       ├── pages/
 │   |       |         ├── cart.jsx
