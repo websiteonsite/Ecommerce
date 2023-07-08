@@ -15,21 +15,21 @@ const Login = () => {
     const handleLogin = () => {
         console.log(userName, password)
 
-        const data = { name: userName, password: password }
-        axios.post('http://localhost:3000/login', data)
+        const data = { email: userName, password: password }
+        axios.post('http://reqres.in/api/login', {
+            email : userName,
+            password : password
+        })
             .then((res) => {
-                console.log(res.data.token, 17)
+                console.log(res.data.token, 17);
                 if (res.data.token) {
                     localStorage.setItem('token', res.data.token)
                     localStorage.setItem('user', JSON.stringify(res.data.user))
                     localStorage.setItem('userId', res.data.user._id)
                     localStorage.setItem('rights', JSON.stringify(res.data.user.roles))
-                    // if (res.data.user.type === "USER") {
-                    //     navigate('/home')
-                    // }
-                    // if (res.data.user.type === "SELLER") {
-                    navigate('/products')
-                    // }
+                
+                    navigate('/product')
+                    
                 }
             })
             .catch((err) => {
